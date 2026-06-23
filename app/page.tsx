@@ -1,7 +1,6 @@
 "use client";
 
 import { ChangeEvent, FormEvent, useEffect, useRef, useState } from "react";
-import Image from "next/image";
 
 type Path = "artist" | "agency" | null;
 
@@ -129,13 +128,12 @@ export default function Home() {
       <section className="section hero-section">
         <div className="grain" aria-hidden="true" />
         <Wordmark />
-        <Image
+        <img
           className="hero-star"
-          src="/cutstar-star.jpeg"
+          src="cutstar-star.jpeg"
           alt=""
           width={1254}
           height={1254}
-          priority
         />
         <Reveal className="hero-copy">
           <h1>Months of content. Delivered within a day.</h1>
